@@ -1,0 +1,4 @@
+Recommended Docs/Practice:
+
+https://www.geeksforgeeks.org/machine-learning/python-arima-model-for-time-series-forecasting/
+https://www.kaggle.com/competitions/titanic/overview
