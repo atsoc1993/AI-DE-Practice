@@ -1,4 +1,4 @@
-from algopy import ARC4Contract, log, Bytes
+from algopy import ARC4Contract, log, Bytes, subroutine, UInt64, op
 from algopy.arc4 import abimethod
 
 class TestContract(ARC4Contract):
@@ -26,3 +26,13 @@ class TestContract(ARC4Contract):
     @abimethod
     def test4(self) -> None:
         log("Test")
+        c = self.test_a_subroutine()
+        log(op.itob(c))
+        log(op.itob(c))
+
+    @subroutine
+    def test_a_subroutine(self) -> UInt64:
+        a = UInt64(7)
+        b = UInt64(5)
+        c = a + b
+        return c
