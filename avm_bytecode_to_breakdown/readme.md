@@ -84,7 +84,7 @@ Found log opcode, logs 0x54657374
 - *Methods Available*
 - *Method/Label Mapping*
 - *Global state initial keys & values on deployment*
-- *Bytecblock constants (Bytecblocks are used to optimize if a value is used more than once anywhere throughout the contract logic, and these constants are references with "bytec_0", "bytec_1", "bytec_2", "bytec_3" or "bytec N" opcodes)*
+- *Bytecblock constants (Bytecblocks are used to optimize if a value is used more than once anywhere throughout the contract logic, and these constants are referenced with "bytec_0", "bytec_1", "bytec_2", "bytec_3" or "bytec N" opcodes)*
 ```
 App Data:
 App Version: 11
