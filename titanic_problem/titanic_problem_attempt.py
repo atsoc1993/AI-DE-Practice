@@ -26,30 +26,25 @@ all_other_columns = ['Pclass', 'Sex', 'Fare', 'Age', 'SibSp', 'Parch', 'Embarked
 test_data = original_test_data[all_other_columns]
 
 data['Sex'] = data['Sex'].map({'male': 0, 'female': 1})
-test_data['Sex'] = test_data['Sex'].map({'male': 0, 'female': 1})
-
 data['Embarked'] = data['Embarked'].map({'S': 0, 'Q': 1, 'C': 2})
-test_data['Embarked'] = test_data['Embarked'].map({'S': 0, 'Q': 1, 'C': 2})
 
 data['Sex'] = data['Sex'].fillna(data['Sex'].mode()[0])
-test_data['Sex'] = test_data['Sex'].fillna(test_data['Sex'].mode()[0])
-
 data['Embarked'] = data['Embarked'].fillna(data['Embarked'].mode()[0])
-test_data['Embarked'] = test_data['Embarked'].fillna(test_data['Embarked'].mode()[0])
-
 data['Pclass'] = data['Pclass'].fillna(data['Pclass'].mode()[0])
-test_data['Pclass'] = test_data['Pclass'].fillna(test_data['Pclass'].mode()[0])
-
 data['SibSp'] = data['SibSp'].fillna(data['SibSp'].mode()[0])
-test_data['SibSp'] = test_data['SibSp'].fillna(test_data['SibSp'].mode()[0])
-
 data['Parch'] = data['Parch'].fillna(data['Parch'].mode()[0])
-test_data['Parch'] = test_data['Parch'].fillna(test_data['Parch'].mode()[0])
-
 data['Age'] = data['Age'].fillna(data['Age'].mean())
-test_data['Age'] = test_data['Age'].fillna(test_data['Age'].mean())
-
 data['Fare'] = data['Fare'].fillna(data['Fare'].mean())
+
+test_data['Sex'] = test_data['Sex'].map({'male': 0, 'female': 1})
+test_data['Embarked'] = test_data['Embarked'].map({'S': 0, 'Q': 1, 'C': 2})
+
+test_data['Sex'] = test_data['Sex'].fillna(test_data['Sex'].mode()[0])
+test_data['Embarked'] = test_data['Embarked'].fillna(test_data['Embarked'].mode()[0])
+test_data['Pclass'] = test_data['Pclass'].fillna(test_data['Pclass'].mode()[0])
+test_data['SibSp'] = test_data['SibSp'].fillna(test_data['SibSp'].mode()[0])
+test_data['Parch'] = test_data['Parch'].fillna(test_data['Parch'].mode()[0])
+test_data['Age'] = test_data['Age'].fillna(test_data['Age'].mean())
 test_data['Fare'] = test_data['Fare'].fillna(test_data['Fare'].mean())
 
 
