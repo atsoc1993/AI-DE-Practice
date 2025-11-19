@@ -54,18 +54,8 @@ main_after_if_else@2:
     assert
     pushbytess 0x20254f91 0xf1908524 0xdf920f37 0x3d46345c // method "test1()void", method "test2()void", method "test3()void", method "test4()void"
     txna ApplicationArgs 0
-    match main_test1_route@6 main_test2_route@7 main_test3_route@8 main_test4_route@9
+    match main_test1_route@6 main_test2_route@7 main_test3_route@8 test4
     err
-
-main_test4_route@9:
-    // contract.py:28
-    // log("Test")
-    bytec_1 // "Test"
-    log
-    // contract.py:26
-    // @abimethod
-    intc_0 // 1
-    return
 
 main_test3_route@8:
     // contract.py:24
@@ -104,5 +94,28 @@ main___algopy_default_create@13:
     !
     &&
     assert // OnCompletion must be NoOp && can only call when creating
+    intc_0 // 1
+    return
+
+
+// contract.TestContract.test4[routing]() -> void:
+test4:
+    // contract.py:28
+    // log("Test")
+    bytec_1 // "Test"
+    log
+    // contract.py:37
+    // c = a + b
+    pushint 12 // 12
+    // contract.py:30
+    // log(op.itob(c))
+    itob
+    dup
+    log
+    // contract.py:31
+    // log(op.itob(c))
+    log
+    // contract.py:26
+    // @abimethod
     intc_0 // 1
     return
