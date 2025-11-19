@@ -3,38 +3,106 @@
 
 // algopy.arc4.ARC4Contract.approval_program() -> uint64:
 main:
+    intcblock 1
+    bytecblock 0x4141414141414141414141414141414141414141 "Test"
+    txn ApplicationID
+    bnz main_after_if_else@2
+    // contract.py:6
+    // self.zxzxzxzxzxzx= Bytes(b'CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC')
+    pushbytess "zxzxzxzxzxzx" 0x43434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343 // "zxzxzxzxzxzx", 0x43434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343
+    app_global_put
+    // contract.py:7
+    // self.zxzxzxzxzxzxzxzxzx = Bytes(b'AAAAAAAAAAAAAAAAAAAA')
+    pushbytes "zxzxzxzxzxzxzxzxzx"
+    bytec_0 // 0x4141414141414141414141414141414141414141
+    app_global_put
+    // contract.py:8
+    // self.zxzxzxzxzxzxzxzxzxzxzxzx = Bytes(b'AAAAAAAAAAAAAAAAAAAA')
+    pushbytes "zxzxzxzxzxzxzxzxzxzxzxzx"
+    bytec_0 // 0x4141414141414141414141414141414141414141
+    app_global_put
+    // contract.py:9
+    // self.zxzxzxzxzxzxzxzxzxzxzxxzzxxzzx = Bytes(b'AAAAAAAAAAAAAAAAAAAA')
+    pushbytes "zxzxzxzxzxzxzxzxzxzxzxxzzxxzzx"
+    bytec_0 // 0x4141414141414141414141414141414141414141
+    app_global_put
+    // contract.py:10
+    // self.zxzxzxzxzxzxzxzxzxzxzxxzxzxzzzxz = Bytes(b'AAAAAAAAAAAAAAAAAAAA')
+    pushbytes "zxzxzxzxzxzxzxzxzxzxzxxzxzxzzzxz"
+    bytec_0 // 0x4141414141414141414141414141414141414141
+    app_global_put
+    // contract.py:11
+    // self.zxzxzxzxzxzxzxzxzxxzxxzxzxzzzxzxzxxzxzxzzzxz = Bytes(b'AAAAAAAAAAAAAAAAAAAA')
+    pushbytes "zxzxzxzxzxzxzxzxzxxzxxzxzxzzzxzxzxxzxzxzzzxz"
+    bytec_0 // 0x4141414141414141414141414141414141414141
+    app_global_put
+    // contract.py:12
+    // self.zxzxzxzxzxzxzxzxzxxzxxzxzxzzzxzxzxxzxzxzzzxzxzxxzxzxzzzxz = Bytes(b'AAAAAAAAAAAAAAAAAAAA')
+    pushbytes "zxzxzxzxzxzxzxzxzxxzxxzxzxzzzxzxzxxzxzxzzzxzxzxxzxzxzzzxz"
+    bytec_0 // 0x4141414141414141414141414141414141414141
+    app_global_put
+
+main_after_if_else@2:
     // contract.py:4
     // class TestContract(ARC4Contract):
     txn NumAppArgs
-    bz main___algopy_default_create@7
-    pushbytes 0xa78000de // method "test()void"
-    txna ApplicationArgs 0
-    match main_test_route@5
-    err
-
-main_test_route@5:
-    // contract.py:8
-    // @abimethod
+    bz main___algopy_default_create@13
     txn OnCompletion
     !
+    assert // OnCompletion must be NoOp
     txn ApplicationID
-    &&
-    assert // OnCompletion must be NoOp && can only call when not creating
-    // contract.py:10
+    assert
+    pushbytess 0x20254f91 0xf1908524 0xdf920f37 0x3d46345c // method "test1()void", method "test2()void", method "test3()void", method "test4()void"
+    txna ApplicationArgs 0
+    match main_test1_route@6 main_test2_route@7 main_test3_route@8 main_test4_route@9
+    err
+
+main_test4_route@9:
+    // contract.py:28
     // log("Test")
-    pushbytes "Test"
+    bytec_1 // "Test"
     log
-    // contract.py:8
+    // contract.py:26
     // @abimethod
-    pushint 1 // 1
+    intc_0 // 1
     return
 
-main___algopy_default_create@7:
+main_test3_route@8:
+    // contract.py:24
+    // log("Test")
+    bytec_1 // "Test"
+    log
+    // contract.py:22
+    // @abimethod
+    intc_0 // 1
+    return
+
+main_test2_route@7:
+    // contract.py:20
+    // log("Test")
+    bytec_1 // "Test"
+    log
+    // contract.py:18
+    // @abimethod
+    intc_0 // 1
+    return
+
+main_test1_route@6:
+    // contract.py:16
+    // log("Test")
+    bytec_1 // "Test"
+    log
+    // contract.py:14
+    // @abimethod
+    intc_0 // 1
+    return
+
+main___algopy_default_create@13:
     txn OnCompletion
     !
     txn ApplicationID
     !
     &&
     assert // OnCompletion must be NoOp && can only call when creating
-    pushint 1 // 1
+    intc_0 // 1
     return

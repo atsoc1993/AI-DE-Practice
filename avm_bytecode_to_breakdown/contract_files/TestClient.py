@@ -19,7 +19,7 @@ from algosdk.v2client.models import SimulateTraceConfig
 import algokit_utils
 from algokit_utils import AlgorandClient as _AlgoKitAlgorandClient
 
-_APP_SPEC_JSON = r"""{"arcs": [22, 28], "bareActions": {"call": [], "create": ["NoOp"]}, "methods": [{"actions": {"call": ["NoOp"], "create": []}, "args": [], "name": "test", "returns": {"type": "void"}, "events": [], "readonly": false, "recommendations": {}}], "name": "TestContract", "state": {"keys": {"box": {}, "global": {}, "local": {}}, "maps": {"box": {}, "global": {}, "local": {}}, "schema": {"global": {"bytes": 0, "ints": 0}, "local": {"bytes": 0, "ints": 0}}}, "structs": {}, "byteCode": {"approval": "CzEbQQAfgASngADeNhoAjgEAAQAxGRQxGBBEgARUZXN0sIEBQzEZFDEYFBBEgQFD", "clear": "C4EBQw=="}, "events": [], "networks": {}, "source": {"approval": "I3ByYWdtYSB2ZXJzaW9uIDExCiNwcmFnbWEgdHlwZXRyYWNrIGZhbHNlCgovLyBhbGdvcHkuYXJjNC5BUkM0Q29udHJhY3QuYXBwcm92YWxfcHJvZ3JhbSgpIC0+IHVpbnQ2NDoKbWFpbjoKICAgIC8vIGNvbnRyYWN0LnB5OjQKICAgIC8vIGNsYXNzIFRlc3RDb250cmFjdChBUkM0Q29udHJhY3QpOgogICAgdHhuIE51bUFwcEFyZ3MKICAgIGJ6IG1haW5fX19hbGdvcHlfZGVmYXVsdF9jcmVhdGVANwogICAgcHVzaGJ5dGVzIDB4YTc4MDAwZGUgLy8gbWV0aG9kICJ0ZXN0KCl2b2lkIgogICAgdHhuYSBBcHBsaWNhdGlvbkFyZ3MgMAogICAgbWF0Y2ggbWFpbl90ZXN0X3JvdXRlQDUKICAgIGVycgoKbWFpbl90ZXN0X3JvdXRlQDU6CiAgICAvLyBjb250cmFjdC5weTo4CiAgICAvLyBAYWJpbWV0aG9kCiAgICB0eG4gT25Db21wbGV0aW9uCiAgICAhCiAgICB0eG4gQXBwbGljYXRpb25JRAogICAgJiYKICAgIGFzc2VydCAvLyBPbkNvbXBsZXRpb24gbXVzdCBiZSBOb09wICYmIGNhbiBvbmx5IGNhbGwgd2hlbiBub3QgY3JlYXRpbmcKICAgIC8vIGNvbnRyYWN0LnB5OjEwCiAgICAvLyBsb2coIlRlc3QiKQogICAgcHVzaGJ5dGVzICJUZXN0IgogICAgbG9nCiAgICAvLyBjb250cmFjdC5weTo4CiAgICAvLyBAYWJpbWV0aG9kCiAgICBwdXNoaW50IDEgLy8gMQogICAgcmV0dXJuCgptYWluX19fYWxnb3B5X2RlZmF1bHRfY3JlYXRlQDc6CiAgICB0eG4gT25Db21wbGV0aW9uCiAgICAhCiAgICB0eG4gQXBwbGljYXRpb25JRAogICAgIQogICAgJiYKICAgIGFzc2VydCAvLyBPbkNvbXBsZXRpb24gbXVzdCBiZSBOb09wICYmIGNhbiBvbmx5IGNhbGwgd2hlbiBjcmVhdGluZwogICAgcHVzaGludCAxIC8vIDEKICAgIHJldHVybgo=", "clear": "I3ByYWdtYSB2ZXJzaW9uIDExCiNwcmFnbWEgdHlwZXRyYWNrIGZhbHNlCgovLyBhbGdvcHkuYXJjNC5BUkM0Q29udHJhY3QuY2xlYXJfc3RhdGVfcHJvZ3JhbSgpIC0+IHVpbnQ2NDoKbWFpbjoKICAgIHB1c2hpbnQgMSAvLyAxCiAgICByZXR1cm4K"}, "sourceInfo": {"approval": {"pcOffsetMethod": "none", "sourceInfo": [{"pc": [44], "errorMessage": "OnCompletion must be NoOp && can only call when creating"}, {"pc": [26], "errorMessage": "OnCompletion must be NoOp && can only call when not creating"}]}, "clear": {"pcOffsetMethod": "none", "sourceInfo": []}}, "templateVariables": {}}"""
+_APP_SPEC_JSON = r"""{"arcs": [22, 28], "bareActions": {"call": [], "create": ["NoOp"]}, "methods": [{"actions": {"call": ["NoOp"], "create": []}, "args": [], "name": "test1", "returns": {"type": "void"}, "events": [], "readonly": false, "recommendations": {}}, {"actions": {"call": ["NoOp"], "create": []}, "args": [], "name": "test2", "returns": {"type": "void"}, "events": [], "readonly": false, "recommendations": {}}, {"actions": {"call": ["NoOp"], "create": []}, "args": [], "name": "test3", "returns": {"type": "void"}, "events": [], "readonly": false, "recommendations": {}}, {"actions": {"call": ["NoOp"], "create": []}, "args": [], "name": "test4", "returns": {"type": "void"}, "events": [], "readonly": false, "recommendations": {}}], "name": "TestContract", "state": {"keys": {"box": {}, "global": {"zxzxzxzxzxzx": {"key": "enh6eHp4enh6eHp4", "keyType": "AVMString", "valueType": "AVMBytes"}, "zxzxzxzxzxzxzxzxzx": {"key": "enh6eHp4enh6eHp4enh6eHp4", "keyType": "AVMString", "valueType": "AVMBytes"}, "zxzxzxzxzxzxzxzxzxzxzxzx": {"key": "enh6eHp4enh6eHp4enh6eHp4enh6eHp4", "keyType": "AVMString", "valueType": "AVMBytes"}, "zxzxzxzxzxzxzxzxzxzxzxxzzxxzzx": {"key": "enh6eHp4enh6eHp4enh6eHp4enh6eHh6enh4enp4", "keyType": "AVMString", "valueType": "AVMBytes"}, "zxzxzxzxzxzxzxzxzxzxzxxzxzxzzzxz": {"key": "enh6eHp4enh6eHp4enh6eHp4enh6eHh6eHp4enp6eHo=", "keyType": "AVMString", "valueType": "AVMBytes"}, "zxzxzxzxzxzxzxzxzxxzxxzxzxzzzxzxzxxzxzxzzzxz": {"key": "enh6eHp4enh6eHp4enh6eHp4eHp4eHp4enh6enp4enh6eHh6eHp4enp6eHo=", "keyType": "AVMString", "valueType": "AVMBytes"}, "zxzxzxzxzxzxzxzxzxxzxxzxzxzzzxzxzxxzxzxzzzxzxzxxzxzxzzzxz": {"key": "enh6eHp4enh6eHp4enh6eHp4eHp4eHp4enh6enp4enh6eHh6eHp4enp6eHp4enh4enh6eHp6enh6", "keyType": "AVMString", "valueType": "AVMBytes"}}, "local": {}}, "maps": {"box": {}, "global": {}, "local": {}}, "schema": {"global": {"bytes": 7, "ints": 0}, "local": {"bytes": 0, "ints": 0}}}, "structs": {}, "byteCode": {"approval": "CyABASYCFEFBQUFBQUFBQUFBQUFBQUFBQUFBBFRlc3QxGEABM4ICDHp4enh6eHp4enh6eD1DQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDZ4ASenh6eHp4enh6eHp4enh6eHp4KGeAGHp4enh6eHp4enh6eHp4enh6eHp4enh6eChngB56eHp4enh6eHp4enh6eHp4enh6eHp4eHp6eHh6engoZ4Agenh6eHp4enh6eHp4enh6eHp4enh6eHh6eHp4enp6eHooZ4Asenh6eHp4enh6eHp4enh6eHp4eHp4eHp4enh6enp4enh6eHh6eHp4enp6eHooZ4A5enh6eHp4enh6eHp4enh6eHp4eHp4eHp4enh6enp4enh6eHh6eHp4enp6eHp4enh4enh6eHp6enh6KGcxG0EAOzEZFEQxGESCBAQgJU+RBPGQhSQE35IPNwQ9RjRcNhoAjgQADQAJAAUAAQApsCJDKbAiQymwIkMpsCJDMRkUMRgUEEQiQw==", "clear": "C4EBQw=="}, "events": [], "networks": {}, "source": {"approval": "I3ByYWdtYSB2ZXJzaW9uIDExCiNwcmFnbWEgdHlwZXRyYWNrIGZhbHNlCgovLyBhbGdvcHkuYXJjNC5BUkM0Q29udHJhY3QuYXBwcm92YWxfcHJvZ3JhbSgpIC0+IHVpbnQ2NDoKbWFpbjoKICAgIGludGNibG9jayAxCiAgICBieXRlY2Jsb2NrIDB4NDE0MTQxNDE0MTQxNDE0MTQxNDE0MTQxNDE0MTQxNDE0MTQxNDE0MSAiVGVzdCIKICAgIHR4biBBcHBsaWNhdGlvbklECiAgICBibnogbWFpbl9hZnRlcl9pZl9lbHNlQDIKICAgIC8vIGNvbnRyYWN0LnB5OjYKICAgIC8vIHNlbGYuenh6eHp4enh6eHp4PSBCeXRlcyhiJ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0MnKQogICAgcHVzaGJ5dGVzcyAienh6eHp4enh6eHp4IiAweDQzNDM0MzQzNDM0MzQzNDM0MzQzNDM0MzQzNDM0MzQzNDM0MzQzNDM0MzQzNDM0MzQzNDM0MzQzNDM0MzQzNDM0MzQzNDM0MzQzNDM0MzQzNDM0MzQzNDM0MzQzNDM0MzQzNDM0MzQzNDM0MzQzNDM0MzQzNDM0MzQzIC8vICJ6eHp4enh6eHp4engiLCAweDQzNDM0MzQzNDM0MzQzNDM0MzQzNDM0MzQzNDM0MzQzNDM0MzQzNDM0MzQzNDM0MzQzNDM0MzQzNDM0MzQzNDM0MzQzNDM0MzQzNDM0MzQzNDM0MzQzNDM0MzQzNDM0MzQzNDM0MzQzNDM0MzQzNDM0MzQzNDM0MzQzCiAgICBhcHBfZ2xvYmFsX3B1dAogICAgLy8gY29udHJhY3QucHk6NwogICAgLy8gc2VsZi56eHp4enh6eHp4enh6eHp4enggPSBCeXRlcyhiJ0FBQUFBQUFBQUFBQUFBQUFBQUFBJykKICAgIHB1c2hieXRlcyAienh6eHp4enh6eHp4enh6eHp4IgogICAgYnl0ZWNfMCAvLyAweDQxNDE0MTQxNDE0MTQxNDE0MTQxNDE0MTQxNDE0MTQxNDE0MTQxNDEKICAgIGFwcF9nbG9iYWxfcHV0CiAgICAvLyBjb250cmFjdC5weTo4CiAgICAvLyBzZWxmLnp4enh6eHp4enh6eHp4enh6eHp4enh6eCA9IEJ5dGVzKGInQUFBQUFBQUFBQUFBQUFBQUFBQUEnKQogICAgcHVzaGJ5dGVzICJ6eHp4enh6eHp4enh6eHp4enh6eHp4engiCiAgICBieXRlY18wIC8vIDB4NDE0MTQxNDE0MTQxNDE0MTQxNDE0MTQxNDE0MTQxNDE0MTQxNDE0MQogICAgYXBwX2dsb2JhbF9wdXQKICAgIC8vIGNvbnRyYWN0LnB5OjkKICAgIC8vIHNlbGYuenh6eHp4enh6eHp4enh6eHp4enh6eHh6enh4enp4ID0gQnl0ZXMoYidBQUFBQUFBQUFBQUFBQUFBQUFBQScpCiAgICBwdXNoYnl0ZXMgInp4enh6eHp4enh6eHp4enh6eHp4enh4enp4eHp6eCIKICAgIGJ5dGVjXzAgLy8gMHg0MTQxNDE0MTQxNDE0MTQxNDE0MTQxNDE0MTQxNDE0MTQxNDE0MTQxCiAgICBhcHBfZ2xvYmFsX3B1dAogICAgLy8gY29udHJhY3QucHk6MTAKICAgIC8vIHNlbGYuenh6eHp4enh6eHp4enh6eHp4enh6eHh6eHp4enp6eHogPSBCeXRlcyhiJ0FBQUFBQUFBQUFBQUFBQUFBQUFBJykKICAgIHB1c2hieXRlcyAienh6eHp4enh6eHp4enh6eHp4enh6eHh6eHp4enp6eHoiCiAgICBieXRlY18wIC8vIDB4NDE0MTQxNDE0MTQxNDE0MTQxNDE0MTQxNDE0MTQxNDE0MTQxNDE0MQogICAgYXBwX2dsb2JhbF9wdXQKICAgIC8vIGNvbnRyYWN0LnB5OjExCiAgICAvLyBzZWxmLnp4enh6eHp4enh6eHp4enh6eHh6eHh6eHp4enp6eHp4enh4enh6eHp6enh6ID0gQnl0ZXMoYidBQUFBQUFBQUFBQUFBQUFBQUFBQScpCiAgICBwdXNoYnl0ZXMgInp4enh6eHp4enh6eHp4enh6eHh6eHh6eHp4enp6eHp4enh4enh6eHp6enh6IgogICAgYnl0ZWNfMCAvLyAweDQxNDE0MTQxNDE0MTQxNDE0MTQxNDE0MTQxNDE0MTQxNDE0MTQxNDEKICAgIGFwcF9nbG9iYWxfcHV0CiAgICAvLyBjb250cmFjdC5weToxMgogICAgLy8gc2VsZi56eHp4enh6eHp4enh6eHp4enh4enh4enh6eHp6enh6eHp4eHp4enh6enp4enh6eHh6eHp4enp6eHogPSBCeXRlcyhiJ0FBQUFBQUFBQUFBQUFBQUFBQUFBJykKICAgIHB1c2hieXRlcyAienh6eHp4enh6eHp4enh6eHp4eHp4eHp4enh6enp4enh6eHh6eHp4enp6eHp4enh4enh6eHp6enh6IgogICAgYnl0ZWNfMCAvLyAweDQxNDE0MTQxNDE0MTQxNDE0MTQxNDE0MTQxNDE0MTQxNDE0MTQxNDEKICAgIGFwcF9nbG9iYWxfcHV0CgptYWluX2FmdGVyX2lmX2Vsc2VAMjoKICAgIC8vIGNvbnRyYWN0LnB5OjQKICAgIC8vIGNsYXNzIFRlc3RDb250cmFjdChBUkM0Q29udHJhY3QpOgogICAgdHhuIE51bUFwcEFyZ3MKICAgIGJ6IG1haW5fX19hbGdvcHlfZGVmYXVsdF9jcmVhdGVAMTMKICAgIHR4biBPbkNvbXBsZXRpb24KICAgICEKICAgIGFzc2VydCAvLyBPbkNvbXBsZXRpb24gbXVzdCBiZSBOb09wCiAgICB0eG4gQXBwbGljYXRpb25JRAogICAgYXNzZXJ0CiAgICBwdXNoYnl0ZXNzIDB4MjAyNTRmOTEgMHhmMTkwODUyNCAweGRmOTIwZjM3IDB4M2Q0NjM0NWMgLy8gbWV0aG9kICJ0ZXN0MSgpdm9pZCIsIG1ldGhvZCAidGVzdDIoKXZvaWQiLCBtZXRob2QgInRlc3QzKCl2b2lkIiwgbWV0aG9kICJ0ZXN0NCgpdm9pZCIKICAgIHR4bmEgQXBwbGljYXRpb25BcmdzIDAKICAgIG1hdGNoIG1haW5fdGVzdDFfcm91dGVANiBtYWluX3Rlc3QyX3JvdXRlQDcgbWFpbl90ZXN0M19yb3V0ZUA4IG1haW5fdGVzdDRfcm91dGVAOQogICAgZXJyCgptYWluX3Rlc3Q0X3JvdXRlQDk6CiAgICAvLyBjb250cmFjdC5weToyOAogICAgLy8gbG9nKCJUZXN0IikKICAgIGJ5dGVjXzEgLy8gIlRlc3QiCiAgICBsb2cKICAgIC8vIGNvbnRyYWN0LnB5OjI2CiAgICAvLyBAYWJpbWV0aG9kCiAgICBpbnRjXzAgLy8gMQogICAgcmV0dXJuCgptYWluX3Rlc3QzX3JvdXRlQDg6CiAgICAvLyBjb250cmFjdC5weToyNAogICAgLy8gbG9nKCJUZXN0IikKICAgIGJ5dGVjXzEgLy8gIlRlc3QiCiAgICBsb2cKICAgIC8vIGNvbnRyYWN0LnB5OjIyCiAgICAvLyBAYWJpbWV0aG9kCiAgICBpbnRjXzAgLy8gMQogICAgcmV0dXJuCgptYWluX3Rlc3QyX3JvdXRlQDc6CiAgICAvLyBjb250cmFjdC5weToyMAogICAgLy8gbG9nKCJUZXN0IikKICAgIGJ5dGVjXzEgLy8gIlRlc3QiCiAgICBsb2cKICAgIC8vIGNvbnRyYWN0LnB5OjE4CiAgICAvLyBAYWJpbWV0aG9kCiAgICBpbnRjXzAgLy8gMQogICAgcmV0dXJuCgptYWluX3Rlc3QxX3JvdXRlQDY6CiAgICAvLyBjb250cmFjdC5weToxNgogICAgLy8gbG9nKCJUZXN0IikKICAgIGJ5dGVjXzEgLy8gIlRlc3QiCiAgICBsb2cKICAgIC8vIGNvbnRyYWN0LnB5OjE0CiAgICAvLyBAYWJpbWV0aG9kCiAgICBpbnRjXzAgLy8gMQogICAgcmV0dXJuCgptYWluX19fYWxnb3B5X2RlZmF1bHRfY3JlYXRlQDEzOgogICAgdHhuIE9uQ29tcGxldGlvbgogICAgIQogICAgdHhuIEFwcGxpY2F0aW9uSUQKICAgICEKICAgICYmCiAgICBhc3NlcnQgLy8gT25Db21wbGV0aW9uIG11c3QgYmUgTm9PcCAmJiBjYW4gb25seSBjYWxsIHdoZW4gY3JlYXRpbmcKICAgIGludGNfMCAvLyAxCiAgICByZXR1cm4K", "clear": "I3ByYWdtYSB2ZXJzaW9uIDExCiNwcmFnbWEgdHlwZXRyYWNrIGZhbHNlCgovLyBhbGdvcHkuYXJjNC5BUkM0Q29udHJhY3QuY2xlYXJfc3RhdGVfcHJvZ3JhbSgpIC0+IHVpbnQ2NDoKbWFpbjoKICAgIHB1c2hpbnQgMSAvLyAxCiAgICByZXR1cm4K"}, "sourceInfo": {"approval": {"pcOffsetMethod": "none", "sourceInfo": [{"pc": [352], "errorMessage": "OnCompletion must be NoOp"}, {"pc": [415], "errorMessage": "OnCompletion must be NoOp && can only call when creating"}]}, "clear": {"pcOffsetMethod": "none", "sourceInfo": []}}, "templateVariables": {}}"""
 APP_SPEC = algokit_utils.Arc56Contract.from_json(_APP_SPEC_JSON)
 
 def _parse_abi_args(args: object | None = None) -> list[object] | None:
@@ -68,7 +68,7 @@ class TestContractParams:
     def __init__(self, app_client: algokit_utils.AppClient):
         self.app_client = app_client
 
-    def test(
+    def test1(
         self,
         params: algokit_utils.CommonAppCallParams | None = None
     ) -> algokit_utils.AppCallMethodCallParams:
@@ -76,7 +76,40 @@ class TestContractParams:
         params = params or algokit_utils.CommonAppCallParams()
         return self.app_client.params.call(algokit_utils.AppClientMethodCallParams(**{
             **dataclasses.asdict(params),
-            "method": "test()void",
+            "method": "test1()void",
+        }))
+
+    def test2(
+        self,
+        params: algokit_utils.CommonAppCallParams | None = None
+    ) -> algokit_utils.AppCallMethodCallParams:
+    
+        params = params or algokit_utils.CommonAppCallParams()
+        return self.app_client.params.call(algokit_utils.AppClientMethodCallParams(**{
+            **dataclasses.asdict(params),
+            "method": "test2()void",
+        }))
+
+    def test3(
+        self,
+        params: algokit_utils.CommonAppCallParams | None = None
+    ) -> algokit_utils.AppCallMethodCallParams:
+    
+        params = params or algokit_utils.CommonAppCallParams()
+        return self.app_client.params.call(algokit_utils.AppClientMethodCallParams(**{
+            **dataclasses.asdict(params),
+            "method": "test3()void",
+        }))
+
+    def test4(
+        self,
+        params: algokit_utils.CommonAppCallParams | None = None
+    ) -> algokit_utils.AppCallMethodCallParams:
+    
+        params = params or algokit_utils.CommonAppCallParams()
+        return self.app_client.params.call(algokit_utils.AppClientMethodCallParams(**{
+            **dataclasses.asdict(params),
+            "method": "test4()void",
         }))
 
     def clear_state(
@@ -94,7 +127,7 @@ class TestContractCreateTransactionParams:
     def __init__(self, app_client: algokit_utils.AppClient):
         self.app_client = app_client
 
-    def test(
+    def test1(
         self,
         params: algokit_utils.CommonAppCallParams | None = None
     ) -> algokit_utils.BuiltTransactions:
@@ -102,7 +135,40 @@ class TestContractCreateTransactionParams:
         params = params or algokit_utils.CommonAppCallParams()
         return self.app_client.create_transaction.call(algokit_utils.AppClientMethodCallParams(**{
             **dataclasses.asdict(params),
-            "method": "test()void",
+            "method": "test1()void",
+        }))
+
+    def test2(
+        self,
+        params: algokit_utils.CommonAppCallParams | None = None
+    ) -> algokit_utils.BuiltTransactions:
+    
+        params = params or algokit_utils.CommonAppCallParams()
+        return self.app_client.create_transaction.call(algokit_utils.AppClientMethodCallParams(**{
+            **dataclasses.asdict(params),
+            "method": "test2()void",
+        }))
+
+    def test3(
+        self,
+        params: algokit_utils.CommonAppCallParams | None = None
+    ) -> algokit_utils.BuiltTransactions:
+    
+        params = params or algokit_utils.CommonAppCallParams()
+        return self.app_client.create_transaction.call(algokit_utils.AppClientMethodCallParams(**{
+            **dataclasses.asdict(params),
+            "method": "test3()void",
+        }))
+
+    def test4(
+        self,
+        params: algokit_utils.CommonAppCallParams | None = None
+    ) -> algokit_utils.BuiltTransactions:
+    
+        params = params or algokit_utils.CommonAppCallParams()
+        return self.app_client.create_transaction.call(algokit_utils.AppClientMethodCallParams(**{
+            **dataclasses.asdict(params),
+            "method": "test4()void",
         }))
 
     def clear_state(
@@ -120,7 +186,7 @@ class TestContractSend:
     def __init__(self, app_client: algokit_utils.AppClient):
         self.app_client = app_client
 
-    def test(
+    def test1(
         self,
         params: algokit_utils.CommonAppCallParams | None = None,
         send_params: algokit_utils.SendParams | None = None
@@ -129,7 +195,49 @@ class TestContractSend:
         params = params or algokit_utils.CommonAppCallParams()
         response = self.app_client.send.call(algokit_utils.AppClientMethodCallParams(**{
             **dataclasses.asdict(params),
-            "method": "test()void",
+            "method": "test1()void",
+        }), send_params=send_params)
+        parsed_response = response
+        return typing.cast(algokit_utils.SendAppTransactionResult[None], parsed_response)
+
+    def test2(
+        self,
+        params: algokit_utils.CommonAppCallParams | None = None,
+        send_params: algokit_utils.SendParams | None = None
+    ) -> algokit_utils.SendAppTransactionResult[None]:
+    
+        params = params or algokit_utils.CommonAppCallParams()
+        response = self.app_client.send.call(algokit_utils.AppClientMethodCallParams(**{
+            **dataclasses.asdict(params),
+            "method": "test2()void",
+        }), send_params=send_params)
+        parsed_response = response
+        return typing.cast(algokit_utils.SendAppTransactionResult[None], parsed_response)
+
+    def test3(
+        self,
+        params: algokit_utils.CommonAppCallParams | None = None,
+        send_params: algokit_utils.SendParams | None = None
+    ) -> algokit_utils.SendAppTransactionResult[None]:
+    
+        params = params or algokit_utils.CommonAppCallParams()
+        response = self.app_client.send.call(algokit_utils.AppClientMethodCallParams(**{
+            **dataclasses.asdict(params),
+            "method": "test3()void",
+        }), send_params=send_params)
+        parsed_response = response
+        return typing.cast(algokit_utils.SendAppTransactionResult[None], parsed_response)
+
+    def test4(
+        self,
+        params: algokit_utils.CommonAppCallParams | None = None,
+        send_params: algokit_utils.SendParams | None = None
+    ) -> algokit_utils.SendAppTransactionResult[None]:
+    
+        params = params or algokit_utils.CommonAppCallParams()
+        response = self.app_client.send.call(algokit_utils.AppClientMethodCallParams(**{
+            **dataclasses.asdict(params),
+            "method": "test4()void",
         }), send_params=send_params)
         parsed_response = response
         return typing.cast(algokit_utils.SendAppTransactionResult[None], parsed_response)
@@ -145,11 +253,107 @@ class TestContractSend:
         )
 
 
+class GlobalStateValue(typing.TypedDict):
+    """Shape of global_state state key values"""
+    zxzxzxzxzxzx: bytes
+    zxzxzxzxzxzxzxzxzx: bytes
+    zxzxzxzxzxzxzxzxzxzxzxzx: bytes
+    zxzxzxzxzxzxzxzxzxzxzxxzzxxzzx: bytes
+    zxzxzxzxzxzxzxzxzxzxzxxzxzxzzzxz: bytes
+    zxzxzxzxzxzxzxzxzxxzxxzxzxzzzxzxzxxzxzxzzzxz: bytes
+    zxzxzxzxzxzxzxzxzxxzxxzxzxzzzxzxzxxzxzxzzzxzxzxxzxzxzzzxz: bytes
+
 class TestContractState:
     """Methods to access state for the current TestContract app"""
 
     def __init__(self, app_client: algokit_utils.AppClient):
         self.app_client = app_client
+
+    @property
+    def global_state(
+        self
+    ) -> "_GlobalState":
+            """Methods to access global_state for the current app"""
+            return _GlobalState(self.app_client)
+
+class _GlobalState:
+    def __init__(self, app_client: algokit_utils.AppClient):
+        self.app_client = app_client
+        
+        # Pre-generated mapping of value types to their struct classes
+        self._struct_classes: dict[str, typing.Type[typing.Any]] = {}
+
+    def get_all(self) -> GlobalStateValue:
+        """Get all current keyed values from global_state state"""
+        result = self.app_client.state.global_state.get_all()
+        if not result:
+            return typing.cast(GlobalStateValue, {})
+
+        converted = {}
+        for key, value in result.items():
+            key_info = self.app_client.app_spec.state.keys.global_state.get(key)
+            struct_class = self._struct_classes.get(key_info.value_type) if key_info else None
+            converted[key] = (
+                _init_dataclass(struct_class, value) if struct_class and isinstance(value, dict)
+                else value
+            )
+        return typing.cast(GlobalStateValue, converted)
+
+    @property
+    def zxzxzxzxzxzx(self) -> bytes:
+        """Get the current value of the zxzxzxzxzxzx key in global_state state"""
+        value = self.app_client.state.global_state.get_value("zxzxzxzxzxzx")
+        if isinstance(value, dict) and "AVMBytes" in self._struct_classes:
+            return _init_dataclass(self._struct_classes["AVMBytes"], value)  # type: ignore
+        return typing.cast(bytes, value)
+
+    @property
+    def zxzxzxzxzxzxzxzxzx(self) -> bytes:
+        """Get the current value of the zxzxzxzxzxzxzxzxzx key in global_state state"""
+        value = self.app_client.state.global_state.get_value("zxzxzxzxzxzxzxzxzx")
+        if isinstance(value, dict) and "AVMBytes" in self._struct_classes:
+            return _init_dataclass(self._struct_classes["AVMBytes"], value)  # type: ignore
+        return typing.cast(bytes, value)
+
+    @property
+    def zxzxzxzxzxzxzxzxzxzxzxzx(self) -> bytes:
+        """Get the current value of the zxzxzxzxzxzxzxzxzxzxzxzx key in global_state state"""
+        value = self.app_client.state.global_state.get_value("zxzxzxzxzxzxzxzxzxzxzxzx")
+        if isinstance(value, dict) and "AVMBytes" in self._struct_classes:
+            return _init_dataclass(self._struct_classes["AVMBytes"], value)  # type: ignore
+        return typing.cast(bytes, value)
+
+    @property
+    def zxzxzxzxzxzxzxzxzxzxzxxzzxxzzx(self) -> bytes:
+        """Get the current value of the zxzxzxzxzxzxzxzxzxzxzxxzzxxzzx key in global_state state"""
+        value = self.app_client.state.global_state.get_value("zxzxzxzxzxzxzxzxzxzxzxxzzxxzzx")
+        if isinstance(value, dict) and "AVMBytes" in self._struct_classes:
+            return _init_dataclass(self._struct_classes["AVMBytes"], value)  # type: ignore
+        return typing.cast(bytes, value)
+
+    @property
+    def zxzxzxzxzxzxzxzxzxzxzxxzxzxzzzxz(self) -> bytes:
+        """Get the current value of the zxzxzxzxzxzxzxzxzxzxzxxzxzxzzzxz key in global_state state"""
+        value = self.app_client.state.global_state.get_value("zxzxzxzxzxzxzxzxzxzxzxxzxzxzzzxz")
+        if isinstance(value, dict) and "AVMBytes" in self._struct_classes:
+            return _init_dataclass(self._struct_classes["AVMBytes"], value)  # type: ignore
+        return typing.cast(bytes, value)
+
+    @property
+    def zxzxzxzxzxzxzxzxzxxzxxzxzxzzzxzxzxxzxzxzzzxz(self) -> bytes:
+        """Get the current value of the zxzxzxzxzxzxzxzxzxxzxxzxzxzzzxzxzxxzxzxzzzxz key in global_state state"""
+        value = self.app_client.state.global_state.get_value("zxzxzxzxzxzxzxzxzxxzxxzxzxzzzxzxzxxzxzxzzzxz")
+        if isinstance(value, dict) and "AVMBytes" in self._struct_classes:
+            return _init_dataclass(self._struct_classes["AVMBytes"], value)  # type: ignore
+        return typing.cast(bytes, value)
+
+    @property
+    def zxzxzxzxzxzxzxzxzxxzxxzxzxzzzxzxzxxzxzxzzzxzxzxxzxzxzzzxz(self) -> bytes:
+        """Get the current value of the zxzxzxzxzxzxzxzxzxxzxxzxzxzzzxzxzxxzxzxzzzxzxzxxzxzxzzzxz key in global_state state"""
+        value = self.app_client.state.global_state.get_value("zxzxzxzxzxzxzxzxzxxzxxzxzxzzzxzxzxxzxzxzzzxzxzxxzxzxzzzxz")
+        if isinstance(value, dict) and "AVMBytes" in self._struct_classes:
+            return _init_dataclass(self._struct_classes["AVMBytes"], value)  # type: ignore
+        return typing.cast(bytes, value)
 
 class TestContractClient:
     """Client for interacting with TestContract smart contract"""
@@ -297,7 +501,25 @@ class TestContractClient:
     @typing.overload
     def decode_return_value(
         self,
-        method: typing.Literal["test()void"],
+        method: typing.Literal["test1()void"],
+        return_value: algokit_utils.ABIReturn | None
+    ) -> None: ...
+    @typing.overload
+    def decode_return_value(
+        self,
+        method: typing.Literal["test2()void"],
+        return_value: algokit_utils.ABIReturn | None
+    ) -> None: ...
+    @typing.overload
+    def decode_return_value(
+        self,
+        method: typing.Literal["test3()void"],
+        return_value: algokit_utils.ABIReturn | None
+    ) -> None: ...
+    @typing.overload
+    def decode_return_value(
+        self,
+        method: typing.Literal["test4()void"],
         return_value: algokit_utils.ABIReturn | None
     ) -> None: ...
     @typing.overload
@@ -482,19 +704,76 @@ class TestContractFactoryCreateParams:
             algokit_utils.AppFactoryCreateParams(**dataclasses.asdict(params)),
             compilation_params=compilation_params)
 
-    def test(
+    def test1(
         self,
         *,
         params: algokit_utils.CommonAppCallCreateParams | None = None,
         compilation_params: algokit_utils.AppClientCompilationParams | None = None
     ) -> algokit_utils.AppCreateMethodCallParams:
-        """Creates a new instance using the test()void ABI method"""
+        """Creates a new instance using the test1()void ABI method"""
         params = params or algokit_utils.CommonAppCallCreateParams()
         return self.app_factory.params.create(
             algokit_utils.AppFactoryCreateMethodCallParams(
                 **{
                 **dataclasses.asdict(params),
-                "method": "test()void",
+                "method": "test1()void",
+                "args": None,
+                }
+            ),
+            compilation_params=compilation_params
+        )
+
+    def test2(
+        self,
+        *,
+        params: algokit_utils.CommonAppCallCreateParams | None = None,
+        compilation_params: algokit_utils.AppClientCompilationParams | None = None
+    ) -> algokit_utils.AppCreateMethodCallParams:
+        """Creates a new instance using the test2()void ABI method"""
+        params = params or algokit_utils.CommonAppCallCreateParams()
+        return self.app_factory.params.create(
+            algokit_utils.AppFactoryCreateMethodCallParams(
+                **{
+                **dataclasses.asdict(params),
+                "method": "test2()void",
+                "args": None,
+                }
+            ),
+            compilation_params=compilation_params
+        )
+
+    def test3(
+        self,
+        *,
+        params: algokit_utils.CommonAppCallCreateParams | None = None,
+        compilation_params: algokit_utils.AppClientCompilationParams | None = None
+    ) -> algokit_utils.AppCreateMethodCallParams:
+        """Creates a new instance using the test3()void ABI method"""
+        params = params or algokit_utils.CommonAppCallCreateParams()
+        return self.app_factory.params.create(
+            algokit_utils.AppFactoryCreateMethodCallParams(
+                **{
+                **dataclasses.asdict(params),
+                "method": "test3()void",
+                "args": None,
+                }
+            ),
+            compilation_params=compilation_params
+        )
+
+    def test4(
+        self,
+        *,
+        params: algokit_utils.CommonAppCallCreateParams | None = None,
+        compilation_params: algokit_utils.AppClientCompilationParams | None = None
+    ) -> algokit_utils.AppCreateMethodCallParams:
+        """Creates a new instance using the test4()void ABI method"""
+        params = params or algokit_utils.CommonAppCallCreateParams()
+        return self.app_factory.params.create(
+            algokit_utils.AppFactoryCreateMethodCallParams(
+                **{
+                **dataclasses.asdict(params),
+                "method": "test4()void",
                 "args": None,
                 }
             ),
@@ -602,19 +881,70 @@ class TestContractComposer:
         self._composer = client.algorand.new_group()
         self._result_mappers: list[typing.Callable[[algokit_utils.ABIReturn | None], object] | None] = []
 
-    def test(
+    def test1(
         self,
         params: algokit_utils.CommonAppCallParams | None = None
     ) -> "TestContractComposer":
         self._composer.add_app_call_method_call(
-            self.client.params.test(
+            self.client.params.test1(
                 
                 params=params,
             )
         )
         self._result_mappers.append(
             lambda v: self.client.decode_return_value(
-                "test()void", v
+                "test1()void", v
+            )
+        )
+        return self
+
+    def test2(
+        self,
+        params: algokit_utils.CommonAppCallParams | None = None
+    ) -> "TestContractComposer":
+        self._composer.add_app_call_method_call(
+            self.client.params.test2(
+                
+                params=params,
+            )
+        )
+        self._result_mappers.append(
+            lambda v: self.client.decode_return_value(
+                "test2()void", v
+            )
+        )
+        return self
+
+    def test3(
+        self,
+        params: algokit_utils.CommonAppCallParams | None = None
+    ) -> "TestContractComposer":
+        self._composer.add_app_call_method_call(
+            self.client.params.test3(
+                
+                params=params,
+            )
+        )
+        self._result_mappers.append(
+            lambda v: self.client.decode_return_value(
+                "test3()void", v
+            )
+        )
+        return self
+
+    def test4(
+        self,
+        params: algokit_utils.CommonAppCallParams | None = None
+    ) -> "TestContractComposer":
+        self._composer.add_app_call_method_call(
+            self.client.params.test4(
+                
+                params=params,
+            )
+        )
+        self._result_mappers.append(
+            lambda v: self.client.decode_return_value(
+                "test4()void", v
             )
         )
         return self
