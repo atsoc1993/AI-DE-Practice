@@ -71,12 +71,12 @@ intc_0 // 1
 return
 ```
 
-*Detects log opcodes and value on the stack when logging*
+~~*Detects log opcodes and value on the stack when logging*~~
 ```
-Found log opcode, logs 0x54657374
-Found log opcode, logs 0x54657374
-Found log opcode, logs 0x54657374
-Found log opcode, logs 0x54657374
+~~Found log opcode, logs 0x54657374~~
+~~Found log opcode, logs 0x54657374~~
+~~Found log opcode, logs 0x54657374~~
+~~Found log opcode, logs 0x54657374~~
 ```
 
 *General Information:*
@@ -84,12 +84,17 @@ Found log opcode, logs 0x54657374
 - *Methods Available*
 - *Method/Label Mapping*
 - *Global state initial keys & values on deployment*
+- *Can decipher simple log AVM bytecode
 - *Bytecblock constants (Bytecblocks are used to optimize if a value is used more than once anywhere throughout the contract logic, and these constants are referenced with "bytec_0", "bytec_1", "bytec_2", "bytec_3" or "bytec N" opcodes)*
 ```
 App Data:
 App Version: 11
 Methods: ['0x20254f91', '0xf1908524', '0xdf920f37', '0x3d46345c']
 Method Label Mapping: {'label3': '0x20254f91', 'label4': '0xf1908524', 'label5': '0xdf920f37', 'label6': '0x3d46345c'}
+Method (label3) logs 0x54657374 and returns
+Method (label4) logs 0x54657374 and returns
+Method (label5) logs 0x54657374 and returns
+Method (label6) logs 0x54657374 and returns
 Global States: {'0x7a787a787a787a787a787a78': '0x43434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343', '0x7a787a787a787a787a787a787a787a787a78': '0x4141414141414141414141414141414141414141', '0x7a787a787a787a787a787a787a787a787a787a787a787a78': '0x4141414141414141414141414141414141414141', '0x7a787a787a787a787a787a787a787a787a787a787a78787a7a78787a7a78': '0x4141414141414141414141414141414141414141', '0x7a787a787a787a787a787a787a787a787a787a787a78787a787a787a7a7a787a': '0x4141414141414141414141414141414141414141', '0x7a787a787a787a787a787a787a787a787a78787a78787a787a787a7a7a787a787a78787a787a787a7a7a787a': '0x4141414141414141414141414141414141414141', '0x7a787a787a787a787a787a787a787a787a78787a78787a787a787a7a7a787a787a78787a787a787a7a7a787a787a78787a787a787a7a7a787a': '0x4141414141414141414141414141414141414141'}
 Bytecblock Constants: {0: '0x4141414141414141414141414141414141414141', 1: '0x54657374'}
 ```

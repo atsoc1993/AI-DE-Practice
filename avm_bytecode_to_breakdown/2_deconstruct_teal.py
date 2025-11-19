@@ -67,7 +67,9 @@ fns = {
     'log': [-1]
 }
 
+method_logic_mapping = {}
 for method in available_methods:
+    logic_detected = []
     for i, line in enumerate(teal_split):
         if reverse_method_label_mapping[method] == line[:-1]:
             # print(line) #label start for a method
@@ -85,12 +87,14 @@ for method in available_methods:
                         if 'bytec' in trimmed_fn_value:
                             trimmed_fn_value = constants[int(trimmed_fn_value[-1])]
                         vars.append(trimmed_fn_value)
-                    print(f'Found {next_line} opcode, logs {vars[0]}')
+                    method_logic_mapping[method] = f'Method ({reverse_method_label_mapping[method]}) logs {vars[0]} and returns'
 
 print(f'App Data:')
 print(f'App Version: {app_version}')
 print(f'Methods: {available_methods}')
 print(f'Method Label Mapping: {method_label_mapping}')
+for method in reverse_method_label_mapping:
+    print(method_logic_mapping[method])
 print(f'Global States: {global_states}')
 print(f'Bytecblock Constants: {constants}')
 
